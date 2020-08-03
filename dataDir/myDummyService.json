@@ -1,1 +1,0 @@
-{"id":"myDummyService","name":"New service","crashMessage":null,"healthy":false,"log":[],"escalationPolicyId":"default","currentAlert":{"acknowledged":false,"message":"Not an useful message","level":2,"alertTime":"2020-08-03T19:29:53.589Z"}}

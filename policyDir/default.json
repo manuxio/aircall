@@ -5,17 +5,17 @@
   "messageTemplate": "[ALERT] This is an automated message to inform you that the service _serviceid_ has crashed.\\nThe alert was first generated at _alerttime_. The current escalation level is _escalationlevel_.\\nYou must aknowledge this alarm to inform the system (and your fellow collegues) that the issue is being taken care of. \\nPlease click on the following link _aknowledgeurl_ to acknowledge.",
   "levels": {
     "0": {
-      "phoneNumbers": ["+393486506530"],
+      "phoneNumbers": ["+1111111111111111"],
       "mailAddresses": ["employee@aircall.io"],
       "acknowledgeTimeout": 10000
     },
     "1": {
-      "phoneNumbers": ["+393486506530"],
+      "phoneNumbers": ["+22222222222222"],
       "mailAddresses": ["supervisor@aircall.io"],
       "acknowledgeTimeout": 60000
     },
     "2": {
-      "phoneNumbers": ["+393486506530"],
+      "phoneNumbers": ["+3333333333333333"],
       "mailAddresses": ["ceo@aircall.io"],
       "acknowledgeTimeout": 0
     }
