@@ -14,14 +14,22 @@ The server will listen on port 8081. You can configure some specs (like the port
 
 Once the server is up and running, you can call the following URLS:
 
-### http://localhost:8081/services/*serviceId*/crashed
+### POST http://localhost:8081/services/*serviceId*/crashed
+~~~
+curl --location --request POST 'localhost:8081/services/serviceId/crashed' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "message": "Hello, I crashed :("
+}'
+~~~
+
 This should create a service (if not already created) and mark it as crashed.
 By looking at the console, you will see the progress of the events (like mails and sms messages being sent...)
 
-### http://localhost:8081/services/*serviceId*/acknowledge
+### GET http://localhost:8081/services/*serviceId*/acknowledge
 This should acknowledge a newly created alert
 
-### http://localhost:8081/services/*serviceId*/healthy
+### GET http://localhost:8081/services/*serviceId*/healthy
 This should mark the service as healthy
 
 You can also run an experimental "console" application, by executing
