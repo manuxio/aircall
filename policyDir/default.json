@@ -1,0 +1,23 @@
+{
+  "policyId": "default",
+  "name": "Default policy",
+  "subjectTemplate": "[ALERT] Service _serviceid_ crashed",
+  "messageTemplate": "[ALERT] This is an automated message to inform you that the service _serviceid_ has crashed.\\nThe alert was first generated at _alerttime_. The current escalation level is _escalationlevel_.\\nYou must aknowledge this alarm to inform the system (and your fellow collegues) that the issue is being taken care of. \\nPlease click on the following link _aknowledgeurl_ to acknowledge.",
+  "levels": {
+    "0": {
+      "phoneNumbers": ["+393486506530"],
+      "mailAddresses": ["employee@aircall.io"],
+      "acknowledgeTimeout": 10000
+    },
+    "1": {
+      "phoneNumbers": ["+393486506530"],
+      "mailAddresses": ["supervisor@aircall.io"],
+      "acknowledgeTimeout": 60000
+    },
+    "2": {
+      "phoneNumbers": ["+393486506530"],
+      "mailAddresses": ["ceo@aircall.io"],
+      "acknowledgeTimeout": 0
+    }
+  }
+}

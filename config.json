@@ -1,0 +1,12 @@
+{
+  "prod": {
+  },
+  "dev": {
+    "dataDir": "./dataDir",
+    "policyDir": "./policyDir",
+    "aknowledgeBaseUrl": "http://localhost:8081/services/_serviceid_/acknowledge",
+    "mode": "development",
+    "logLevel": "trace",
+    "apiPort": 8081
+  }
+}
