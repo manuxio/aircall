@@ -1,7 +1,8 @@
 # Aircall Pager
 ## Installation
 This is a node.js application, so please make sure you have a valid node.js installation.
-Node version > 11
+
+Use node version > 12
 
 1. Download the project
 2. cd into-your-directory
