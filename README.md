@@ -32,9 +32,14 @@ This should acknowledge a newly created alert
 ### GET http://localhost:8081/services/*serviceId*/healthy
 This should mark the service as healthy
 
+---
+
 You can also run an experimental "console" application, by executing
 * npx babel-node --no-warnings src/executables/runConsole.js
-Keep in mind that the console version has limitations that we will eventually discuss later.
+
+_Keep in mind that the console version has limitations that we will eventually discuss later._
+
+---
 
 Most of the adapters have been "mocked up".
 SMS and EMAILS are not really sent.

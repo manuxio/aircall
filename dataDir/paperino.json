@@ -1,1 +1,1 @@
-{"id":"paperino","name":"New service","crashMessage":null,"healthy":false,"log":[],"escalationPolicyId":"default","currentAlert":{"acknowledged":false,"message":"Crash!","level":1,"alertTime":"2020-08-03T17:43:56.014Z"}}
+{"id":"paperino","name":"New service","crashMessage":null,"healthy":false,"log":[],"escalationPolicyId":"default","currentAlert":{"acknowledged":true,"message":"What a crash!","level":0,"alertTime":"2020-08-04T06:17:50.548Z"}}

@@ -63,6 +63,7 @@ const ConsoleClient = class {
     .description('Manipulate service')
     .option('-s, --state [value]', 'Set service state', '')
     .option('-m, --message [value]', 'Set service crash message', '')
+    .option('-a, --ack', 'Acknowledge the current alert')
     .action(async (serviceId, options) => {
       // console.log('Service ID', serviceId);
       return Promise.resolve()
@@ -81,6 +82,10 @@ const ConsoleClient = class {
                 } else {
                   return aircall.setServiceCrashed(service, options.message)
                 }
+              }
+            } else {
+              if (options.ack && !service.healthy && !service.currentAlert.acknowledged) {
+                return aircall.acknowledgeCurrentAlert(service);
               }
             }
             // return args.state === 'healthy' ? aircall.setServiceHealthy(service) : aircall.setServiceCrashed()
