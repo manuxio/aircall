@@ -35,7 +35,10 @@ This should mark the service as healthy
 ---
 
 You can also run an experimental "console" application, by executing
-* npx babel-node --no-warnings src/executables/runConsole.js
+* npx babel-node --no-warnings src/executables/runConsole.js help
+* npx babel-node --no-warnings src/executables/runConsole.js service yourService -s nok -m message
+* npx babel-node --no-warnings src/executables/runConsole.js service yourService -a
+* npx babel-node --no-warnings src/executables/runConsole.js ls
 
 _Keep in mind that the console version has limitations that we will eventually discuss later._
 
